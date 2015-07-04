@@ -1,0 +1,28 @@
+.container{
+	margin: 5% auto 2%;
+}
+
+.row{
+	margin-bottom: 1%;
+}
+
+#sampleCodes{
+	padding-left: 2%;
+}
+
+.directionControl {
+	float: right;
+}
+
+.code{
+	text-align: center;
+}
+
+#codeGoesHere{
+	padding-left: 2%;
+}
+
+#footer{
+	width: 90%;
+	margin: 2% auto;
+}

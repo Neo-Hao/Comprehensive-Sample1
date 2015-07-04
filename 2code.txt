@@ -1,0 +1,12 @@
+/* User Input Validation */
+//	user input validation - for number of x to process
+	public static int numberOfXToProcess() {
+		String numberOfXString;
+		int numberOfX;
+		while(true) {
+			//	listen to input and save the values
+			Scanner keyboard = new Scanner(System.in);
+			System.out.println("Please enter the number of x values to process:");
+			numberOfXString = keyboard.nextLine();
+			
+			try{

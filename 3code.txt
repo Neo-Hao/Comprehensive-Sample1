@@ -1,0 +1,9 @@
+//	user input validation - for min x 
+	public static Double inputNumberValidator() {
+		String numberBeforeProcess;
+		Double xmin;
+		while(true) {
+			//	listen to input and save the values
+			Scanner keyboard = new Scanner(System.in);
+			System.out.println("Enter a minimum value for x: ");
+			numberBeforeProcess = keyboard.nextLine();
