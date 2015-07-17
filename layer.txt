@@ -1,0 +1,11 @@
+0,Get Input,,,
+1,Input validation for number of x value to process, https://www.google.com/search?q=java+user+input+validation+while&ie=utf-8&oe=utf-8, https://gist.github.com/Neo-Hao/a3cda6b46388d30e7474
+1,Input validation for minimum value of x,,,
+1,Input validation for increment amount of x,,,
+0,Print all x and y line by line,, https://gist.github.com/Neo-Hao/3e3f3ac9fd8a9801c7d0
+1,Caculate y given a x,,,
+1,Store y,https://www.google.com/search?q=array+java+populate&ie=utf-8&oe=utf-8,,
+1,Print a single line of x and y,,,
+0,Print graph,, https://gist.github.com/Neo-Hao/3af7373e23dfe88cdd9e
+1,Retrieve y,,,
+1,Print a single line of * given a y,,,

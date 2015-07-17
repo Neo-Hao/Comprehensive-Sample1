@@ -33,7 +33,7 @@
 								<li role="separator" class="divider"></li>
 								<li><a href="http://home.tobeneo.com/Comprehensive-List-Tasks/">Input for Sub Tasks</a></li>
 								<li role="separator" class="divider"></li>
-								<li><a href="#">Input for Code Structure</a></li>
+								<li><a href="http://home.tobeneo.com/Input-for-Code-Structure/">Input for Code Structure</a></li>
 							</ul>
 				        </li>
 	                	<li class="dropdown">
@@ -41,9 +41,9 @@
 							<ul class="dropdown-menu">
 								<li class="active"><a>Sample Problem 1</a></li>
 								<li role="separator" class="divider"></li>
-								<li><a href="#">Sample Problem 2</a></li>
+								<li><a href="http://home.tobeneo.com/Sample-Problem-2/">Sample Problem 2</a></li>
 								<li role="separator" class="divider"></li>
-								<li><a href="#">Sample Problem 3</a></li>
+								<li><a href="http://home.tobeneo.com/Sample-Problem-3/">Sample Problem 3</a></li>
 							</ul>
 				        </li>
 	                </ul>
@@ -64,42 +64,23 @@
 				<h2>Problem Breakdown</h2>
 			</div>
 			<div class="task-layer col-sm-5">
-				<p class="steps" id="0"><span class="step"></span> <span><a class="query" href="#"><img src="img/link.png" width="15px"></a></span> <span><a href="#" class="codelink"><img src="img/github.png" width="20px"></a></span></p>
+				<p class="steps" id="0"><span class="step"></span> <span><a class="query" href="#" target="_blank"><img src="img/link.png" width="15px"></a></span> <span><a href="#" target="_blank" class="codelink"><img src="img/github.png" width="20px"></a></span></p>
 			</div>
 
 			<div id="codeSnippet" class ="col-sm-7">
 				<pre class="prettyprint" id="codeGoesHere">
-import java.util.Scanner;
-
 class StarGraph {
-
 	public static void main(String[] args) {
-		// get input for number of x to process
+		// get input
 		int numberX = numberOfXToProcess();
-		// get input for min value for x
 		Double minX = inputNumberValidator();
-		// get input for increment value
 		Double incrementX = incrementValidator();
 		
-		// prepare an array to store integer part of y
-		int[] starnum = new int[numberX];
-		
 		// print x and y line by line
-		System.out.println("\nValues: ");
-		double x = minX;
-		for (int i=0; i <= (numberX-1); i++) {
-			double y =calculateY(x);
-			printXY(x, y);
-			// store y
-			starnum[i] = (int)Math.floor(y);
-			x += incrementX;
-		}
+		int[] starnum = printNumbers(numberX, minX, incrementX);
 		
-		// print out the graph		
-		System.out.println("\nGraphs: ");
-		for (int i:starnum) {
-			printALineOfStar(i);
-		}
+		// print out the graph
+		printGraph(starnum);
 	}
 }
 				</pre>

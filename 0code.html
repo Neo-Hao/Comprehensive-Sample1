@@ -1,33 +1,14 @@
-import java.util.Scanner;
-
 class StarGraph {
-
 	public static void main(String[] args) {
-		// get input for number of x to process
+		// get input
 		int numberX = numberOfXToProcess();
-		// get input for min value for x
 		Double minX = inputNumberValidator();
-		// get input for increment value
 		Double incrementX = incrementValidator();
 		
-		// prepare an array to store integer part of y
-		int[] starnum = new int[numberX];
-		
 		// print x and y line by line
-		System.out.println("\nValues: ");
-		double x = minX;
-		for (int i=0; i <= (numberX-1); i++) {
-			double y =calculateY(x);
-			printXY(x, y);
-			// store y
-			starnum[i] = (int)Math.floor(y);
-			x += incrementX;
-		}
+		int[] starnum = printNumbers(numberX, minX, incrementX);
 		
-		// print out the graph		
-		System.out.println("\nGraphs: ");
-		for (int i:starnum) {
-			printALineOfStar(i);
-		}
+		// print out the graph
+		printGraph(starnum);
 	}
 }
