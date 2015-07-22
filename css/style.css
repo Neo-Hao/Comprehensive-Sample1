@@ -26,3 +26,8 @@
 	width: 90%;
 	margin: 2% auto;
 }
+
+p.trigger{
+	font-weight: bold;
+	color: #654321;
+}
