@@ -8,4 +8,4 @@
 1,Print a single line of x and y,,,
 0,Print graph,, https://gist.github.com/Neo-Hao/3af7373e23dfe88cdd9e
 1,Retrieve y,,,
-1,Print a single line of * given a y,,,
+1,Print a single line of * given a y,https://www.google.com/search?q=println+java+format&ie=utf-8&oe=utf-8,,
